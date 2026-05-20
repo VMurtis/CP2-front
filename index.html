@@ -3,31 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>tripway</title>
   </head>
   <body>
-    <header>
+    <header class="cabecalho">
       <nav>
-        <ul>
-          <li><a href="/pages/destino.html">Destinos</a></li>
-          <li>
-            <a href="/pages/pacotes-servicos.html">Pacotes ou Serviços</a>
-          </li>
-          <li><a href="/pages/contato-reserva.html"> Contato / Reserva</a></li>
-        </ul>
+        <div class="container">
+          <input type="checkbox" id="menu" class="container__botao" />
+          <label for="menu">
+            <span class="cabecalho__menu-hamburguer container__imagem"> </span>
+          </label>
+          <ul class="lista-menu">
+            <li class="lista-menu__titulo">Páginas</li>
+            <li class="lista-menu__item">
+              <a href="pages/destino.html" class="lista-menu__link">Destino</a>
+            </li>
+            <li class="lista-menu__item">
+              <a href="pages/pacotes-servicos.html" class="lista-menu__link"
+                >Serviços</a
+              >
+            </li>
+            <li class="lista-menu__item">
+              <a href="pages/contato-reserva.html" class="lista-menu__link"
+                >Reserva</a
+              >
+            </li>
+          </ul>
+          <img
+            src="images/Logo.svg"
+            alt="Imagem do logo"
+            class="container__img"
+          />
+          <h1 class="container__titulo">
+            <b class="container__titulo--negrito">tripway</b>
+          </h1>
+        </div>
       </nav>
+
+      <ul class="opcoes">
+        <input type="checkbox" id="opcoes-menu" class="opcoes__botao" />
+
+        <li class="lista-menu__item">
+          <a href="pages/destino.html" class="lista-menu__link">Destino</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="pages/pacotes-servicos.html" class="lista-menu__link"
+            >Serviços</a
+          >
+        </li>
+        <li class="lista-menu__item">
+          <a href="pages/contato-reserva.html" class="lista-menu__link"
+            >Reserva</a
+          >
+        </li>
+      </ul>
+
+      <div class="container">
+        <a href="#" class="container__link"
+          ><img
+            class="container__img"
+            src="images/Usuario.svg"
+            alt="Perfil do Usuario"
+          />
+          <p class="container__texto">Meu perfil</p></a
+        >
+      </div>
     </header>
     <main>
-      <h1>Tripway</h1>
-      <p>Bem-vindo ao Tripway!</p>
-      <img src="images/tripway.png" alt="Logo Tripway" />
-      <h2>Sobre Nós</h2>
-      <p>
-        Somos uma agência de viagens especializada em criar experiências
-        inesquecíveis, oferecendo pacotes nacionais e internacionais com
-        conforto, segurança e atendimento personalizado.
-      </p>
+      <div class="container-flex">
+        <section class="banner">
+          <h2 class="banner__titulo">Tripway</h2>
+          <p class="banner__texto">Bem-vindo ao Tripway!</p>
+          <img class="main__img" src="images/tripway.png" alt="Logo Tripway" />
+          <h2>Sobre Nós</h2>
+          <p>
+            Somos uma agência de viagens especializada em criar experiências
+            inesquecíveis, oferecendo pacotes nacionais e internacionais com
+            conforto, segurança e atendimento personalizado.
+          </p>
+        </section>
+        <div class="cards-container">
+          <section class="card">
+            <h2 class="descricao__titulo">Seu guia para o mundo</h2>
+            <p class="descricao__texto">
+              O TripWay é um guia de viagens moderno e responsivo, criado para
+              ajudar pessoas a descobrirem novos destinos, planejarem suas
+              aventuras e viverem experiências inesquecíveis. A plataforma reúne
+              informações sobre diferentes lugares, pacotes de viagem e
+              serviços, tudo de forma organizada e acessível.
+            </p>
+          </section>
+
+          <section class="card">
+            <h2 class="descricao__titulo">
+              Transforme suas viagens em experiências únicas
+            </h2>
+            <p class="descricao__texto">
+              Além disso, o TripWay oferece dicas úteis para cada etapa da sua
+              jornada, desde a escolha do destino ideal até orientações sobre
+              hospedagem, alimentação e pontos turísticos imperdíveis. Com uma
+              navegação simples e intuitiva, o usuário pode explorar opções de
+              acordo com seu perfil, orçamento e preferências.
+            </p>
+          </section>
+        </div>
+      </div>
     </main>
-    <footer><p>© 2026 Travel World®</p></footer>
+    <hr />
+    <footer class="rodape">
+      <p>© 2026 Travel World®</p>
+    </footer>
   </body>
 </html>
