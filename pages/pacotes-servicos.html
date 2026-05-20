@@ -3,50 +3,136 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Pacotes e Serviços</title>
   </head>
   <body>
-    <header>
+    <header class="cabecalho">
       <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../pages/destino.html">Destinos</a></li>
-          <li>
-            <a href="../pages/contato-reserva.html"> Contato / Reserva</a>
-          </li>
-        </ul>
+        <div class="container">
+          <input type="checkbox" id="menu" class="container__botao" />
+          <label for="menu">
+            <span class="cabecalho__menu-hamburguer container__imagem"> </span>
+          </label>
+          <ul class="lista-menu">
+
+            </li>
+            <li class="lista-menu__titulo">Páginas</li>
+            <li class="lista-menu__item">
+              <a href="../index.html" class="lista-menu__link"
+                >Página inicial</a
+              >
+            <li class="lista-menu__item">
+              <a href="pages/destino.html" class="lista-menu__link">Destino</a>
+            </li>
+
+            <li class="lista-menu__item">
+              <a href="pages/contato-reserva.html" class="lista-menu__link"
+                >Reserva</a
+              >
+            </li>
+          </ul>
+          <img
+            src="../images/Logo.svg"
+            alt="Imagem do logo"
+            class="container__img"
+          />
+          <h1 class="container__titulo">
+            <b class="container__titulo--negrito">tripway</b>
+          </h1>
+        </div>
       </nav>
+
+      <ul class="opcoes">
+        <input type="checkbox" id="opcoes-menu" class="opcoes__botao" />
+
+        <li class="lista-menu__item">
+          <a href="../index.html" class="lista-menu__link">Página inicial</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="pages/destino.html" class="lista-menu__link">Destino</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="pages/contato-reserva.html" class="lista-menu__link"
+            >Reserva</a
+          >
+        </li>
+      </ul>
+
+      <div class="container">
+        <a href="#" class="container__link"
+          ><img
+            class="container__img"
+            src="../images/Usuario.svg"
+            alt="Perfil do Usuario"
+          />
+          <p class="container__texto">Meu perfil</p></a
+        >
+      </div>
     </header>
     <main>
-      <section>
-        <ul>
-          <li>
-            <h2>Pacotes Nacionais</h2>
-            <p>
-              Inclui hospedagem, passeios guiados e suporte completo durante a
-              viagem.
-            </p>
-          </li>
-          <li>
-            <h2>Pacotes Internacionais</h2>
-            <p>
-              Pacotes completos com passagens, hotel e roteiros turísticos
-              personalizados.
-            </p>
-          </li>
-          <li>
-            <h2>Pacotes de Praia</h2>
-            <p>
-              Destinos paradisíacos para relaxar, com praias cristalinas e
-              experiências únicas.
-            </p>
-          </li>
-        </ul>
+
+      <!-- PACOTES -->
+      <section class="banner">
+        <h2 class="banner__titulo">Nossos Pacotes</h2>
+
+        <div class="container-cards">
+
+          <div class="card">
+            <h3 class="descricao__titulo">Pacote Nacional</h3>
+            <p class="descricao__texto">Inclui hospedagem, passeios guiados e suporte completo durante toda a viagem.</p>
+          </div>
+
+          <div class="card">
+            <h3 class="descricao__titulo">Pacote Internacional</h3>
+            <p class="descricao__texto">Passagens, hotel e roteiros personalizados para você conhecer o mundo com tranquilidade.</p>
+          </div>
+
+          <div class="card">
+            <h3 class="descricao__titulo">Pacote Praia</h3>
+            <p class="descricao__texto">Destinos paradisíacos com praias incríveis para relaxar e aproveitar ao máximo.</p>
+          </div>
+
+          <div class="card">
+            <h3 class="descricao__titulo">Pacote Aventura</h3>
+            <p class="descricao__texto">Experiências radicais como trilhas, esportes e contato direto com a natureza.</p>
+          </div>
+
+        </div>
       </section>
-      <section>
-        <img src="../images/pacotes.webp" alt="Pacotes de Viagem" />
+
+      
+      <section class="banner">
+        <h2 class="secao__titulo">Nossos Serviços</h2>
+
+        <div class="container-cards">
+
+          <div class="card">
+            <h3 class="descricao__titulo">Consultoria de Viagem</h3>
+            <p class="descricao__texto">Ajudamos você a planejar cada detalhe da sua viagem de forma personalizada.</p>
+          </div>
+
+          <div class="card">
+            <h3 class="descricao__titulo">Reserva de Hospedagem</h3>
+            <p class="descricao__texto">Encontramos os melhores hotéis com conforto, segurança e ótimo custo-benefício.</p>
+          </div>
+
+          <div class="card">
+            <h3 class="descricao__titulo">Roteiro Personalizado</h3>
+            <p class="descricao__texto">Criamos roteiros exclusivos de acordo com seu estilo e orçamento.</p>
+          </div>
+
+        </div>
       </section>
+
+      <!-- IMAGEM -->
+      <section class="card">
+        <img class="main__img" src="../images/pacotes.webp" alt="Pacotes de Viagem">
+      </section>
+
     </main>
-    <footer><p>© 2026 Travel World®</p></footer>
-  </body>
+    <hr />
+    <footer class="rodape">
+      <p>© 2026 Travel World®</p>
+    </footer>
 </html>
