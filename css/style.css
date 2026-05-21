@@ -1,18 +1,14 @@
 :root {
-  --cor-de-fundo: #ebecee;
   --branco: #fff;
   --laranja: #eb9b00;
-  --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
   --azul-escuro: #002f52;
 
   --font-principal: "Poppins", sans-serif;
   --azul: #002f52;
   --azul-claro: #389ce8;
 
-  --font-secundario: "Josefin Sans", sans-serif;
-
   --preto: #000;
-  --cinza-claro: #c3c3c3;
+
 }
 
 * {
@@ -21,8 +17,8 @@
   box-sizing: border-box;
 }
 body {
-  background-color: var(--cinza-claro);
   background: var(--azul);
+  font-family: var(--font-principal);
 }
 
 .cabecalho__menu-hamburguer {
@@ -53,6 +49,12 @@ body {
 .main__img {
   width: 50%;
   height: auto;
+  margin: 1em;
+}
+
+.card__img {
+  width: 80%;
+  height: auto;
 }
 .lista-menu {
   display: none;
@@ -70,7 +72,6 @@ body {
 .lista-menu__item {
   padding: 1em;
   background-color: var(--branco);
-  font-family: var(--font-principal);
   font-size: 16px;
 }
 
@@ -134,7 +135,6 @@ h2 {
 
 .descricao__titulo {
   color: var(--laranja);
-  font-family: var(--font-principal);
   font-weight: 700;
   padding: 0.5em;
 }
@@ -142,7 +142,6 @@ h2 {
 .descricao__texto {
   color: var(--preto);
   font-size: 14px;
-  font-family: var(--font-principal);
   font-size: 15px;
 }
 
@@ -312,6 +311,9 @@ input[type="radio"] {
     flex-direction: row;
     gap: 1.5rem;
   }
+  .cor__fundo {
+    background: var(--azul);
+  }
 }
 /* desktop */
 @media (min-width: 1024px) {
@@ -344,5 +346,17 @@ input[type="radio"] {
   .form-card .radio-group,
   .form-card button {
     grid-column: span 2;
+  }
+  .main__img {
+    width: 80%;
+    height: auto;
+  }
+
+  .card__img {
+    width: 60%;
+    height: auto;
+  }
+  .cor__fundo {
+    background: var(--azul);
   }
 }
